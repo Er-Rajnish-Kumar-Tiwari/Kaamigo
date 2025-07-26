@@ -56,7 +56,8 @@ export default function LoginPage() {
     try {
       await signIn.authenticateWithRedirect({
         strategy: `oauth_${provider}`,
-        redirectUrl: "/login", // must match route
+        redirectUrl: "/", 
+        
       });
     } catch (err) {
       console.error("Social login failed:", err);
