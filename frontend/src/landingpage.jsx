@@ -7,6 +7,7 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
+import { FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const LandingPage = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -346,7 +347,7 @@ const LandingPage = () => {
 
           {/* Footer Links */}
           <div className="flex flex-col gap-2 text-sm md:items-center">
-            <span className="font-semibold text-purple-300 mb-2">
+            <span className="font-semibold text-purple-300 mb-2 text-xl">
               Quick Links
             </span>
             <a
@@ -365,36 +366,36 @@ const LandingPage = () => {
               onClick={() => navigate("/blog")}
               className="hover:text-purple-400 transition cursor-pointer"
             >
-              Blog
+              Blogs
             </a>
           </div>
 
           {/* Social Icons */}
-          <div className="flex flex-col md:items-end gap-2">
-            <span className="font-semibold text-purple-300 mb-2">
+          <div className="flex flex-col md:items-end gap-2 ">
+            <span className="font-semibold text-purple-300 mb-2 text-xl">
               Connect with us
             </span>
-            <div className="flex gap-4 justify-center md:justify-end text-xl">
+            <div className="flex gap-4 justify-center md:justify-end text-2xl text-center items-center mr-5">
               <a
                 href="#"
                 className="hover:text-purple-400 transition"
                 aria-label="Instagram"
               >
-                📸
+                <FaInstagram className="text-red-500"/>
               </a>
               <a
                 href="#"
                 className="hover:text-purple-400 transition"
                 aria-label="Twitter"
               >
-                🐦
+                <FaTwitter className="text-blue-500"/>
               </a>
               <a
                 href="#"
                 className="hover:text-purple-400 transition"
                 aria-label="LinkedIn"
               >
-                💼
+                <FaLinkedin className="text-blue-700"/>
               </a>
             </div>
           </div>

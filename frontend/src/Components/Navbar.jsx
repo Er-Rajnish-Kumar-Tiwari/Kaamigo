@@ -51,7 +51,7 @@ const Navbar = () => {
           Contact Us
         </NavLink>
         <NavLink to="/blog" className={navLinkClass}>
-          Blog
+          Blogs
         </NavLink>
       </div>
 
